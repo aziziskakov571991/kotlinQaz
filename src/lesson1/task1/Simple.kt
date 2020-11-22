@@ -4,12 +4,12 @@ package lesson1.task1
 
 import kotlin.math.sqrt
 
-
 fun main() {
     val number = 4275
     val a = thirdDigit(number)
-    println ("jauaby $a")
+    println("jauaby $a")
 }
+
 /**
 Бүтін санның квадратын табу
  */
@@ -29,7 +29,7 @@ fun discriminant(a: Double, b: Double, c: Double) = sqr(b) - 4 * a * c
 Квадраттық теңдеудің бір жауабын табу
  */
 fun quadraticEquationRoot(a: Double, b: Double, c: Double) =
-    (-b + sqrt(discriminant(a, b, c))) / (2 * a)
+        (-b + sqrt(discriminant(a, b, c))) / (2 * a)
 
 /**
 Квадраттық теңдеудің екі жауабының көбейтіндісін табу
@@ -53,8 +53,7 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
  * Қанша секунд екенін шығару(мына мысалда 30035).
  */
 fun seconds(hours: Int, minutes: Int, seconds: Int): Int {
-
-    return((hours*(60 * 60)) + (minutes * 60) + seconds)
+    return ((hours * (60 * 60)) + (minutes * 60) + seconds)
 }
 
 
@@ -65,9 +64,8 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int {
  * Радианмен шығарып беру (мысалы, 0.63256).
  */
 fun angleInRadian(deg: Int, min: Int, sec: Int): Double {
-
     val x = (min.toDouble() + sec.toDouble() / 60.0) / 60.0
-    return(deg.toDouble() + x) * Math.PI / 180
+    return (deg.toDouble() + x) * Math.PI / 180
 }
 
 /**
@@ -77,8 +75,7 @@ fun angleInRadian(deg: Int, min: Int, sec: Int): Double {
  * Мысалы, (3, 0) және (0, 4) нүктесінің арасы 5-ке тең
  */
 fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double {
-
-    return(sqrt((sqr(x2 - x1)) + (sqr(y2 - y1))))
+    return (sqrt((sqr(x2 - x1)) + (sqr(y2 - y1))))
 }
 
 /**
@@ -88,8 +85,7 @@ fun trackLength(x1: Double, y1: Double, x2: Double, y2: Double): Double {
  * Соңынан санағанда үшінші санды табу (мына мысалда 8).
  */
 fun thirdDigit(number: Int): Int {
-
-    return((number % 1000) / 100)
+    return ((number % 1000) / 100)
 }
 
 /**
@@ -100,8 +96,7 @@ fun thirdDigit(number: Int): Int {
  * Қанша уақыт жүргенін минуттап есептеңіз (мына мысалда 216).
  */
 fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int): Int {
-
-    return(((hoursArrive * 60) + minutesArrive) - ((hoursDepart * 60) + minutesDepart))
+    return (((hoursArrive * 60) + minutesArrive) - ((hoursDepart * 60) + minutesDepart))
 }
 
 
@@ -113,7 +108,7 @@ fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minute
  */
 fun numberRevert(number: Int): Int {
     val a = number % 10
-    val b = ((number %100)/10)
+    val b = ((number % 100) / 10)
     val c = number / 100
-    return(a * 100 + b * 10 + c)
+    return (a * 100 + b * 10 + c)
 }
