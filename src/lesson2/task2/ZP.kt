@@ -7,10 +7,13 @@ fun main() {
     println("Kolga alatyn aylyk jaz:")
     val a = readLine()
     if (a?.toDoubleOrNull() == null) {
-        println("Tek san jaz:")
+        println("Tek san jaz")
         return
     }
-
+    if (a.toInt() <= 42500) {
+        println("Ayliktan salyk alynbaydi")
+        return
+    }
     println("bastapky aylik: ${getFullSumm(a.toDouble())}")
     val p = getFullSumm(a.toDouble()) * 0.1
     println("pensionka: $p")
@@ -27,3 +30,15 @@ fun getFullSumm(c: Double): Double {
     return a
 
 }
+
+//fun main() {
+//    println("Kilometr jaz:")
+//    val k = readLine()
+//    if (k?.toIntOrNull() == null) {
+//        println("Tek san jazu kerek:")
+//        return
+//    }
+//
+//    val m = k.toDouble() / 1.61
+//    println ("Jauaby: $m miles")
+//}

@@ -4,10 +4,33 @@ package lesson1.task1
 
 import kotlin.math.sqrt
 
+//fun main() {
+//    val a:Double = 1.0
+//    val b:Double = 13.0
+//    val c:Double = 42.0
+//
+//    println("jauaby ${quadraticRootProduct(a, b, c)}")
+//}
+
+//fun main() {
+//    val x1 = 3.0
+//    val x2 = 0.0
+//    val y1 = 0.0
+//    val y2 = 4.0
+//    println("jauaby ${trackLength(x1, y1, x2, y2)}")
+//}
+
+//fun main() {
+//    val hoursDepart = 9
+//    val minutesDepart = 25
+//    val hoursArrive = 13
+//    val minutesArrive = 1
+//    println("jauaby ${travelMinutes(hoursDepart, minutesDepart,hoursArrive, minutesArrive)}")
+//}
+
 fun main() {
-    val number = 4275
-    val a = thirdDigit(number)
-    println("jauaby $a")
+    val number = 427
+    println("jauaby ${numberRevert(number)}")
 }
 
 /**
@@ -29,7 +52,7 @@ fun discriminant(a: Double, b: Double, c: Double) = sqr(b) - 4 * a * c
 Квадраттық теңдеудің бір жауабын табу
  */
 fun quadraticEquationRoot(a: Double, b: Double, c: Double) =
-        (-b + sqrt(discriminant(a, b, c))) / (2 * a)
+    (-b + sqrt(discriminant(a, b, c))) / (2 * a)
 
 /**
 Квадраттық теңдеудің екі жауабының көбейтіндісін табу
